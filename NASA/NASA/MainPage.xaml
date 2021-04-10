@@ -5,10 +5,53 @@
     xmlns:local="using:NASA"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:models="using:NASA.Models"
+    xmlns:viewmodels="using:NASA.ViewModels"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+    <Page.DataContext>
+        <viewmodels:DaysViewModel/>
+    </Page.DataContext>
+    <Page.Resources>
+        <CollectionViewSource x:Name="DaysCollection" Source="{x:Bind DaysVM.Days}"/>
+        <DataTemplate x:Name="DayTemplate" x:DataType="models:DaysModel">
+            <TextBlock Text="{x:Bind title}" FontSize="32"/>
+        </DataTemplate>
+    </Page.Resources>
+    <Page.TopAppBar>
+        <CommandBar>
+            <AppBarButton Icon="Setting" Label="About" ToolTipService.ToolTip="About" AutomationProperties.HelpText="About the application"/>
+            <AppBarSeparator/>
+            <CommandBar.SecondaryCommands>
+                <AppBarButton Label="Exit" ToolTipService.ToolTip="Exit" AutomationProperties.HelpText="Exit"/>
+            </CommandBar.SecondaryCommands>
+        </CommandBar>
+    </Page.TopAppBar>
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="130"/>
+            <RowDefinition Height="441*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="300"/>
+            <ColumnDefinition Width="1193*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Row="0" Grid.Column="0">
+            <DatePicker x:Name="datePickStart" Header="Start Date:"/>
+            <DatePicker x:Name="datePickEnd" Header="End Date:"/>
+        </StackPanel>
+        <ScrollViewer Grid.Row="1" Grid.Column="0">
+            <ListView 
+                ItemsSource="{Binding Source={StaticResource DaysCollection}}"
+                ItemTemplate="{Binding Source={StaticResource DayTemplate}}"
+                >
+                <!--SelectedItem="{x:Bind DaysVM.selectedDay, Mode=TwoWay}"-->
+                
+            </ListView>
+        </ScrollViewer>
+            
+
+
 
     </Grid>
 </Page>

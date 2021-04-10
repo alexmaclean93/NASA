@@ -22,14 +22,26 @@ namespace NASA
 {
     public sealed partial class MainPage : Page
     {
+
+        public ViewModels.DaysViewModel DaysVM { get; set; }
         public Root dayModel { get; set; }
 
         public MainPage()
         {
             this.InitializeComponent();
 
+            this.DaysVM = new ViewModels.DaysViewModel();
+
             dayModel = new Root();
+
             string dateString = "temp";
+
+
+            datePickStart.MinYear = new DateTime(1995, 1, 1);
+            datePickStart.MaxYear = DateTime.Now;
+
+            datePickEnd.MinYear = new DateTime(1995, 1, 1);
+            datePickEnd.MaxYear = DateTime.Now;
             GetDataFromAPI(dateString);
         }
 
@@ -45,7 +57,7 @@ namespace NASA
             HttpClient client = new HttpClient();
 
             string response = await client.GetStringAsync(url);
-            var data = JsonConvert.DeserializeObject<List<DayModel>>(response);
+            var data = JsonConvert.DeserializeObject<List<DaysModel>>(response);
 
             string temp = "Break point";
         }

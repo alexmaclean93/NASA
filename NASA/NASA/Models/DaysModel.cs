@@ -8,10 +8,10 @@ namespace NASA.Models
 {
     public class Root
     {
-        public List<DayModel> data { get; set; }
+        public List<DaysModel> data { get; set; }
     }
 
-    public class DayModel
+    public class DaysModel
     {
         public string apod_site { get; set; }
         public string copyright { get; set; }
