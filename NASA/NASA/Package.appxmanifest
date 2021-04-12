@@ -14,8 +14,8 @@
   <mp:PhoneIdentity PhoneProductId="599e8b52-21d8-45e0-9b9c-817fae49dd05" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
-    <DisplayName>NASA</DisplayName>
-    <PublisherDisplayName>alexm</PublisherDisplayName>
+    <DisplayName>NASA Photo Viewer</DisplayName>
+    <PublisherDisplayName>Alex MacLean, Alex Kaminiski, Kyle McCullough, Chris Keizer</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
 

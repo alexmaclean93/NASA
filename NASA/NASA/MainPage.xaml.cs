@@ -61,5 +61,17 @@ namespace NASA
 
             string temp = "Break point";
         }
+
+        //Go to the about page
+        private void AboutButton_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(About));
+        }
+
+        //Exit the program
+        private void ExitButton_Click(object sender, RoutedEventArgs e)
+        {
+            System.Environment.Exit(0);
+        }
     }
 }

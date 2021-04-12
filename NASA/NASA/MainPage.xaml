@@ -20,10 +20,10 @@
     </Page.Resources>
     <Page.TopAppBar>
         <CommandBar>
-            <AppBarButton Icon="Setting" Label="About" ToolTipService.ToolTip="About" AutomationProperties.HelpText="About the application"/>
+            <AppBarButton Icon="Setting" Label="About" Click="AboutButton_Click" ToolTipService.ToolTip="About" AutomationProperties.HelpText="About the application"/>
             <AppBarSeparator/>
             <CommandBar.SecondaryCommands>
-                <AppBarButton Label="Exit" ToolTipService.ToolTip="Exit" AutomationProperties.HelpText="Exit"/>
+                <AppBarButton Label="Exit" Click="ExitButton_Click" ToolTipService.ToolTip="Exit" AutomationProperties.HelpText="Exit"/>
             </CommandBar.SecondaryCommands>
         </CommandBar>
     </Page.TopAppBar>
