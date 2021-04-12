@@ -1,20 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using NASA.Models;
-using NASA.Repositories;
 
 namespace NASA.ViewModels
 {
-    public class DaysViewModel : INotifyPropertyChanged
+    public class DaysViewModel
     {
-
-        #region Variable Definitions
-        public event PropertyChangedEventHandler PropertyChanged;
         public ObservableCollection<DaysModel> Days { get; set; }
         public string apod_site { get; set; }
         public string copyright { get; set; }
@@ -25,7 +20,6 @@ namespace NASA.ViewModels
         public string title { get; set; }
         public string url { get; set; }
         private DaysModel _selectedDay;
-
         public DaysModel selectedDay
         {
             get { return _selectedDay; }
@@ -44,22 +38,15 @@ namespace NASA.ViewModels
                     url = value.url;
                 }
 
-                // Raise property changed event
+                // Raise property chaned event
 
 
             }
         }
 
-        #endregion
         public DaysViewModel()
         {
             Days = new ObservableCollection<DaysModel>();
-            LoadImages("2018-10-05", "2018-10-10");
-        }
-
-        public async void LoadImages(string startDate, string endDate)
-        {
-            this.Days = await NasaPicturesRepo.GetDateRange(startDate, endDate);
         }
 
 
