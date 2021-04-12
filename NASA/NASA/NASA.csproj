@@ -130,6 +130,7 @@
     </Compile>
     <Compile Include="Models\DaysModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\NasaPicturesRepo.cs" />
     <Compile Include="ViewModels\DaysViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
