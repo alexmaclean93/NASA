@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>DESKTOP-C9FQGQ3</Machine>
-    <WindowsUser>kyleg</WindowsUser>
+    <Machine>LAPTOP-I3N8F4V5</Machine>
+    <WindowsUser>am_ka</WindowsUser>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetOsVersion>10.0</TargetOsVersion>
     <TargetOsDescription>Windows 10.0</TargetOsDescription>
@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>599e8b52-21d8-45e0-9b9c-817fae49dd05</PackageIdentityName>
     <PackageIdentityPublisher>CN=alexm</PackageIdentityPublisher>
-    <IntermediateOutputPath>E:\Github_repositories\NASA\NASA\NASA\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>F:\SEM4-NSCC\PROG_2500\NASA\NASA\NASA\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -18,8 +18,8 @@
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>E:\Github_repositories\NASA\NASA\NASA\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>231CBA9C23B5CE4354009FF487FF5EFFD582B3F712CC7C4D614465566D04EA45</RegisteredManifestChecksum>
+    <LayoutDir>F:\SEM4-NSCC\PROG_2500\NASA\NASA\NASA\bin\x86\Debug\AppX</LayoutDir>
+    <RegisteredManifestChecksum>8619AFAB83CF3417255C7F305658B195F04559023DDB8AE015CE572FF5C250E7</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>599e8b52-21d8-45e0-9b9c-817fae49dd05_1.0.0.0_x86__2n7bhc2nk37tm</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>599e8b52-21d8-45e0-9b9c-817fae49dd05_2n7bhc2nk37tm!App</RegisteredUserModeAppID>
     <RegisteredPackageID>599e8b52-21d8-45e0-9b9c-817fae49dd05</RegisteredPackageID>
@@ -27,22 +27,22 @@
     <RegisteredVersion>1.0.0.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="E:\Github_repositories\NASA\NASA\NASA\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="F:\SEM4-NSCC\PROG_2500\NASA\NASA\NASA\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-04-12T21:42:36.136</Modified>
+      <Modified>2021-04-13T18:10:18.392</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="E:\Github_repositories\NASA\NASA\NASA\bin\x86\Debug\NASA.exe">
+    <AppxPackagedFile Include="F:\SEM4-NSCC\PROG_2500\NASA\NASA\NASA\bin\x86\Debug\NASA.exe">
       <PackagePath>entrypoint\NASA.exe</PackagePath>
-      <Modified>2021-04-12T21:42:35.050</Modified>
+      <Modified>2021-04-13T18:10:17.717</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kyleg\.nuget\packages\newtonsoft.json\13.0.1\lib\netstandard2.0\Newtonsoft.Json.dll">
+    <AppxPackagedFile Include="C:\Users\am_ka\.nuget\packages\newtonsoft.json\13.0.1\lib\netstandard2.0\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
       <Modified>2021-03-17T23:03:36.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kyleg\.nuget\packages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.11\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
+    <AppxPackagedFile Include="C:\Users\am_ka\.nuget\packages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.11\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
       <Modified>2020-11-20T13:09:24.000</Modified>
     </AppxPackagedFile>
@@ -50,129 +50,129 @@
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
       <Modified>2019-12-06T23:24:14.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Github_repositories\NASA\NASA\NASA\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="F:\SEM4-NSCC\PROG_2500\NASA\NASA\NASA\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2021-04-06T22:04:13.797</Modified>
+      <Modified>2021-04-06T22:02:57.984</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Github_repositories\NASA\NASA\NASA\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="F:\SEM4-NSCC\PROG_2500\NASA\NASA\NASA\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2021-04-06T22:04:13.794</Modified>
+      <Modified>2021-04-06T22:02:57.940</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Github_repositories\NASA\NASA\NASA\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="F:\SEM4-NSCC\PROG_2500\NASA\NASA\NASA\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-04-06T22:04:13.794</Modified>
+      <Modified>2021-04-06T22:02:57.943</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Github_repositories\NASA\NASA\NASA\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="F:\SEM4-NSCC\PROG_2500\NASA\NASA\NASA\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-04-06T22:04:13.794</Modified>
+      <Modified>2021-04-06T22:02:57.945</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Github_repositories\NASA\NASA\NASA\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="F:\SEM4-NSCC\PROG_2500\NASA\NASA\NASA\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-04-06T22:04:13.794</Modified>
+      <Modified>2021-04-06T22:02:57.949</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Github_repositories\NASA\NASA\NASA\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="F:\SEM4-NSCC\PROG_2500\NASA\NASA\NASA\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-04-06T22:04:13.795</Modified>
+      <Modified>2021-04-06T22:02:57.953</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Github_repositories\NASA\NASA\NASA\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="F:\SEM4-NSCC\PROG_2500\NASA\NASA\NASA\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-04-06T22:04:13.795</Modified>
+      <Modified>2021-04-06T22:02:57.955</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Github_repositories\NASA\NASA\NASA\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="F:\SEM4-NSCC\PROG_2500\NASA\NASA\NASA\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-04-06T22:04:13.795</Modified>
+      <Modified>2021-04-06T22:02:57.957</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Github_repositories\NASA\NASA\NASA\bin\x86\Debug\NASA.xr.xml">
+    <AppxPackagedFile Include="F:\SEM4-NSCC\PROG_2500\NASA\NASA\NASA\bin\x86\Debug\NASA.xr.xml">
       <PackagePath>NASA.xr.xml</PackagePath>
-      <Modified>2021-04-12T21:42:34.929</Modified>
+      <Modified>2021-04-13T18:10:17.588</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Github_repositories\NASA\NASA\NASA\bin\x86\Debug\App.xbf">
+    <AppxPackagedFile Include="F:\SEM4-NSCC\PROG_2500\NASA\NASA\NASA\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2021-04-12T21:42:34.962</Modified>
+      <Modified>2021-04-13T18:10:17.613</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Github_repositories\NASA\NASA\NASA\bin\x86\Debug\About.xbf">
+    <AppxPackagedFile Include="F:\SEM4-NSCC\PROG_2500\NASA\NASA\NASA\bin\x86\Debug\About.xbf">
       <PackagePath>About.xbf</PackagePath>
-      <Modified>2021-04-12T21:42:34.962</Modified>
+      <Modified>2021-04-13T18:10:17.614</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Github_repositories\NASA\NASA\NASA\bin\x86\Debug\Details.xbf">
+    <AppxPackagedFile Include="F:\SEM4-NSCC\PROG_2500\NASA\NASA\NASA\bin\x86\Debug\Details.xbf">
       <PackagePath>Details.xbf</PackagePath>
-      <Modified>2021-04-12T21:42:34.962</Modified>
+      <Modified>2021-04-13T18:10:17.615</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Github_repositories\NASA\NASA\NASA\bin\x86\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="F:\SEM4-NSCC\PROG_2500\NASA\NASA\NASA\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2021-04-12T21:42:34.962</Modified>
+      <Modified>2021-04-13T18:10:17.619</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.19041.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
       <Modified>2019-12-06T21:33:46.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Github_repositories\NASA\NASA\NASA\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="F:\SEM4-NSCC\PROG_2500\NASA\NASA\NASA\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2021-04-12T21:42:35.452</Modified>
+      <Modified>2021-04-13T17:36:34.495</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Github_repositories\NASA\NASA\NASA\bin\x86\Debug\Core\NASA.exe">
+    <AppxPackagedFile Include="F:\SEM4-NSCC\PROG_2500\NASA\NASA\NASA\bin\x86\Debug\Core\NASA.exe">
       <PackagePath>NASA.exe</PackagePath>
-      <Modified>2021-04-12T21:42:36.089</Modified>
+      <Modified>2021-04-13T18:10:18.383</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
-    <ResolvedSDKReference Include="C:\Users\kyleg\.nuget\packages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.11\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
+    <ResolvedSDKReference Include="C:\Users\am_ka\.nuget\packages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.11\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
       <Name>Microsoft.NET.CoreRuntime.2.2</Name>
       <Version>2.2.27902.3</Version>
       <Architecture>x86</Architecture>
       <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.2.2, MinVersion = 2.2.27902.3, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Users\kyleg\.nuget\packages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.11\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
+      <AppxLocation>C:\Users\am_ka\.nuget\packages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.11\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Users\kyleg\.nuget\packages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.11\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
+    <ResolvedSDKReference Include="C:\Users\am_ka\.nuget\packages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.11\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
       <Name>Microsoft.NET.CoreRuntime.2.2</Name>
       <Version>2.2.27902.3</Version>
       <Architecture>x64</Architecture>
       <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.2.2, MinVersion = 2.2.27902.3, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Users\kyleg\.nuget\packages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.11\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
+      <AppxLocation>C:\Users\am_ka\.nuget\packages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.11\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Users\kyleg\.nuget\packages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.11\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
+    <ResolvedSDKReference Include="C:\Users\am_ka\.nuget\packages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.11\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
       <Name>Microsoft.NET.CoreRuntime.2.2</Name>
       <Version>2.2.27902.3</Version>
       <Architecture>arm</Architecture>
       <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.2.2, MinVersion = 2.2.27902.3, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Users\kyleg\.nuget\packages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.11\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
+      <AppxLocation>C:\Users\am_ka\.nuget\packages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.11\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Users\kyleg\.nuget\packages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.11\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
+    <ResolvedSDKReference Include="C:\Users\am_ka\.nuget\packages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.11\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
       <Name>Microsoft.NET.CoreFramework.Debug.2.2</Name>
       <Version>2.2.29301.2</Version>
       <Architecture>x86</Architecture>
       <FrameworkIdentity>Name = Microsoft.NET.CoreFramework.Debug.2.2, MinVersion = 2.2.29301.2, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Users\kyleg\.nuget\packages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.11\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
+      <AppxLocation>C:\Users\am_ka\.nuget\packages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.11\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Users\kyleg\.nuget\packages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.11\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
+    <ResolvedSDKReference Include="C:\Users\am_ka\.nuget\packages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.11\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
       <Name>Microsoft.NET.CoreFramework.Debug.2.2</Name>
       <Version>2.2.29301.2</Version>
       <Architecture>x64</Architecture>
       <FrameworkIdentity>Name = Microsoft.NET.CoreFramework.Debug.2.2, MinVersion = 2.2.29301.2, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Users\kyleg\.nuget\packages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.11\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
+      <AppxLocation>C:\Users\am_ka\.nuget\packages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.11\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Users\kyleg\.nuget\packages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.11\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
+    <ResolvedSDKReference Include="C:\Users\am_ka\.nuget\packages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.11\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
       <Name>Microsoft.NET.CoreFramework.Debug.2.2</Name>
       <Version>2.2.29301.2</Version>
       <Architecture>arm</Architecture>
       <FrameworkIdentity>Name = Microsoft.NET.CoreFramework.Debug.2.2, MinVersion = 2.2.29301.2, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Users\kyleg\.nuget\packages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.11\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
+      <AppxLocation>C:\Users\am_ka\.nuget\packages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.11\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>

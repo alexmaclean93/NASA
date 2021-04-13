@@ -20,6 +20,9 @@
     </Page.Resources>
     <Page.TopAppBar>
         <CommandBar>
+            <CommandBar.Content>
+                <TextBlock Text="NASA Photo of the Day" FontSize="22" Margin="5" Opacity="0.5"/>
+            </CommandBar.Content>
             <AppBarButton x:ConnectionId='5' Icon="Setting" Label="About"                           ToolTipService.ToolTip="About" AutomationProperties.HelpText="About the application"/>
             <AppBarSeparator/>
             <CommandBar.SecondaryCommands>
@@ -36,22 +39,26 @@
             <ColumnDefinition Width="315"/>
             <ColumnDefinition Width="1193*"/>
         </Grid.ColumnDefinitions>
-        <StackPanel Grid.Row="0" Grid.Column="0">
-            <DatePicker x:ConnectionId='8' x:Name="datePickStart" Header="Start Date:" HorizontalAlignment="Center"/>
-            <DatePicker x:ConnectionId='9' x:Name="datePickEnd" Header="End Date:" HorizontalAlignment="Center"/>
+
+
+        <StackPanel Grid.Row="0" Grid.Column="0" Margin="0,5,0,0">
+            <DatePicker x:ConnectionId='9' x:Name="datePickStart" Header="Start Date" HorizontalAlignment="Center"/>
+            <DatePicker x:ConnectionId='10' x:Name="datePickEnd" Header="End Date" Margin="0,5,0,0"
+                        HorizontalAlignment="Center"/>
         </StackPanel>
         <ScrollViewer Grid.Row="1" Grid.Column="0">
-            <ListView x:ConnectionId='7' 
+            <ListView x:ConnectionId='8' 
                 ItemsSource="{Binding Source={StaticResource DaysCollection}}"
                 ItemTemplate="{Binding Source={StaticResource DayTemplate}}"
                                                                        >
-
             </ListView>
         </ScrollViewer>
-        <Button Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,50">Details</Button>
-            
 
-
+        <StackPanel Grid.Row="0" Grid.Column="1" Grid.RowSpan="2">
+            <Image x:ConnectionId='7' Width="Auto" Height="930"                                                         />
+            <Button HorizontalAlignment="Stretch" Margin="0" Height="56" VerticalAlignment="Bottom"
+                     FontSize="22">Photo Details</Button>
+        </StackPanel>
 
     </Grid>
 </Page>

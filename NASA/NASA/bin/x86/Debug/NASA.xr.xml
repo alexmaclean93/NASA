@@ -18,6 +18,8 @@
     <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
       <RootProperty Name="FontSize" />
       <RootProperty Name="Text" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Opacity" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ToolTipService">
       <RootMethod Name="GetToolTip" />
@@ -32,6 +34,8 @@
       <RootMethod Name="SetRow" />
       <RootMethod Name="GetColumn" />
       <RootMethod Name="SetColumn" />
+      <RootMethod Name="GetRowSpan" />
+      <RootMethod Name="SetRowSpan" />
     </RootType>
     <RootType FullName="NASA.Details" />
     <RootType FullName="NASA.ViewModels.DaysViewModel" />
@@ -45,6 +49,7 @@
       <RootProperty Name="Mode" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.CommandBar">
+      <RootProperty Name="Content" />
       <RootProperty Name="PrimaryCommands" />
       <RootProperty Name="SecondaryCommands" />
     </RootType>
@@ -67,10 +72,17 @@
     <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
       <RootProperty Name="Content" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Image">
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Source" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Button">
       <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Margin" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="FontSize" />
       <RootProperty Name="Content" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ListView">
@@ -85,6 +97,7 @@
     <RootType FullName="Windows.UI.Xaml.Controls.DatePicker">
       <RootProperty Name="Header" />
       <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Margin" />
     </RootType>
     <RootType FullName="NASA.MainPage" />
   </Roots.RootTypes>

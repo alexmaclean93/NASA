@@ -9,17 +9,23 @@
     xmlns:viewmodels="using:NASA.ViewModels"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    
     <Page.DataContext>
         <viewmodels:DaysViewModel/>
     </Page.DataContext>
+    
     <Page.Resources>
         <CollectionViewSource x:Name="DaysCollection" Source="{x:Bind DaysVM.Days}"/>
         <DataTemplate x:Name="DayTemplate" x:DataType="models:DaysModel">
             <TextBlock Text="{x:Bind title}" FontSize="32"/>
         </DataTemplate>
     </Page.Resources>
+    
     <Page.TopAppBar>
         <CommandBar>
+            <CommandBar.Content>
+                <TextBlock Text="NASA Photo of the Day" FontSize="22" Margin="5" Opacity="0.5"/>
+            </CommandBar.Content>
             <AppBarButton Icon="Setting" Label="About" Click="AboutButton_Click" ToolTipService.ToolTip="About" AutomationProperties.HelpText="About the application"/>
             <AppBarSeparator/>
             <CommandBar.SecondaryCommands>
@@ -27,6 +33,7 @@
             </CommandBar.SecondaryCommands>
         </CommandBar>
     </Page.TopAppBar>
+    
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="130"/>
@@ -36,22 +43,24 @@
             <ColumnDefinition Width="315"/>
             <ColumnDefinition Width="1193*"/>
         </Grid.ColumnDefinitions>
-        <StackPanel Grid.Row="0" Grid.Column="0">
-            <DatePicker x:Name="datePickStart" Header="Start Date:" HorizontalAlignment="Center"/>
-            <DatePicker x:Name="datePickEnd" Header="End Date:" HorizontalAlignment="Center"/>
+
+        <StackPanel Grid.Row="0" Grid.Column="0" Margin="0,5,0,0">
+            <DatePicker x:Name="datePickStart" Header="Start Date" HorizontalAlignment="Center"/>
+            <DatePicker x:Name="datePickEnd" Header="End Date" Margin="0,5,0,0"
+                        HorizontalAlignment="Center"/>
         </StackPanel>
         <ScrollViewer Grid.Row="1" Grid.Column="0">
             <ListView 
                 ItemsSource="{Binding Source={StaticResource DaysCollection}}"
                 ItemTemplate="{Binding Source={StaticResource DayTemplate}}"
                 SelectedItem="{x:Bind DaysVM.selectedDay, Mode=TwoWay}">
-
             </ListView>
         </ScrollViewer>
-        <Button Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,50">Details</Button>
-            
 
-
-
+        <StackPanel Grid.Row="0" Grid.Column="1" Grid.RowSpan="2">
+            <Image Width="Auto" Height="Auto" Source="{x:Bind DaysVM.selectedDay.hdurl, Mode=OneWay}" />
+            <Button HorizontalAlignment="Stretch" Margin="0" Height="56" VerticalAlignment="Bottom"
+                     FontSize="22">Photo Details</Button>
+        </StackPanel>
     </Grid>
 </Page>
