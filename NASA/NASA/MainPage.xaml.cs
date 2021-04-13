@@ -24,7 +24,12 @@ namespace NASA
     {
 
         public ViewModels.DaysViewModel DaysVM { get; set; }
-        public Root dayModel { get; set; }
+        public Root DayModel { get; set; }
+        
+        private string startDateStr { get; set; }
+        private string endDateStr { get; set; }
+        private bool startDateSet = false;
+        private bool endDateSet = false;
 
         public MainPage()
         {
@@ -32,17 +37,15 @@ namespace NASA
 
             this.DaysVM = new ViewModels.DaysViewModel();
 
-            dayModel = new Root();
-
-            string dateString = "temp";
-
+            DayModel = new Root();
 
             datePickStart.MinYear = new DateTime(1995, 1, 1);
             datePickStart.MaxYear = DateTime.Now;
 
             datePickEnd.MinYear = new DateTime(1995, 1, 1);
             datePickEnd.MaxYear = DateTime.Now;
-            GetDataFromAPI(dateString);
+
+            //GetDataFromAPI(dateString);
         }
 
         private async void GetDataFromAPI(string dateString)
@@ -72,6 +75,47 @@ namespace NASA
         private void ExitButton_Click(object sender, RoutedEventArgs e)
         {
             System.Environment.Exit(0);
+        }
+
+        private void datePickStart_SelectedDateChanged(DatePicker sender, DatePickerSelectedValueChangedEventArgs args)
+        {
+
+            // NEED TO CHECK FOR CORRECT START DATE (NOT BEFORE 1995-06-16)
+
+            var date = args.NewDate;
+
+            startDateStr = date.Value.Year.ToString() + "-" +
+                date.Value.Month.ToString() + "-" +
+                date.Value.Day.ToString();
+
+            startDateSet = true;
+
+            if (startDateSet && endDateSet)
+            {
+                // GET IMAGES/DAYS
+                string temp = "temp";
+            }           
+        }
+
+        private void datePickEnd_SelectedDateChanged(DatePicker sender, DatePickerSelectedValueChangedEventArgs args)
+        {
+
+            // NEED TO CHECK FOR CORRECT END DATE (NOT BEFORE START DATE)
+
+            var date = args.NewDate;
+
+            endDateStr = date.Value.Year.ToString() + "-" +
+                date.Value.Month.ToString() + "-" +
+                date.Value.Day.ToString();
+
+            endDateSet = true;
+
+            if (startDateSet && endDateSet)
+            {
+                // GET IMAGES/DAYS
+            }
+
+            
         }
     }
 }

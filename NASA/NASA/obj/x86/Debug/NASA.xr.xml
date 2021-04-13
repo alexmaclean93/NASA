@@ -98,6 +98,7 @@
       <RootProperty Name="Header" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Margin" />
+      <RootEvent Name="SelectedDateChanged" />
     </RootType>
     <RootType FullName="NASA.MainPage" />
   </Roots.RootTypes>

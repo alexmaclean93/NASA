@@ -9,15 +9,18 @@
     xmlns:viewmodels="using:NASA.ViewModels"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    
     <Page.DataContext>
         <viewmodels:DaysViewModel/>
     </Page.DataContext>
+    
     <Page.Resources>
         <CollectionViewSource x:ConnectionId='2' x:Name="DaysCollection"                              />
         <DataTemplate x:ConnectionId='3' x:Name="DayTemplate"                              >
             <TextBlock x:ConnectionId='4'                       FontSize="32"/>
         </DataTemplate>
     </Page.Resources>
+    
     <Page.TopAppBar>
         <CommandBar>
             <CommandBar.Content>
@@ -30,6 +33,7 @@
             </CommandBar.SecondaryCommands>
         </CommandBar>
     </Page.TopAppBar>
+    
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="130"/>
@@ -40,11 +44,10 @@
             <ColumnDefinition Width="1193*"/>
         </Grid.ColumnDefinitions>
 
-
         <StackPanel Grid.Row="0" Grid.Column="0" Margin="0,5,0,0">
-            <DatePicker x:ConnectionId='9' x:Name="datePickStart" Header="Start Date" HorizontalAlignment="Center"/>
+            <DatePicker x:ConnectionId='9' x:Name="datePickStart" Header="Start Date" HorizontalAlignment="Center"                                                        />
             <DatePicker x:ConnectionId='10' x:Name="datePickEnd" Header="End Date" Margin="0,5,0,0"
-                        HorizontalAlignment="Center"/>
+                        HorizontalAlignment="Center"                                                      />
         </StackPanel>
         <ScrollViewer Grid.Row="1" Grid.Column="0">
             <ListView x:ConnectionId='8' 
@@ -55,11 +58,10 @@
         </ScrollViewer>
 
         <StackPanel Grid.Row="0" Grid.Column="1" Grid.RowSpan="2">
-            <Image x:ConnectionId='7' Width="Auto" Height="930"                                                         />
+            <Image x:ConnectionId='7' Width="Auto" Height="Auto"                                                         />
             <Button HorizontalAlignment="Stretch" Margin="0" Height="56" VerticalAlignment="Bottom"
                      FontSize="22">Photo Details</Button>
         </StackPanel>
-
     </Grid>
 </Page>
 

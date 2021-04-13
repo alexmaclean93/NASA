@@ -45,9 +45,9 @@
         </Grid.ColumnDefinitions>
 
         <StackPanel Grid.Row="0" Grid.Column="0" Margin="0,5,0,0">
-            <DatePicker x:Name="datePickStart" Header="Start Date" HorizontalAlignment="Center"/>
+            <DatePicker x:Name="datePickStart" Header="Start Date" HorizontalAlignment="Center" SelectedDateChanged="datePickStart_SelectedDateChanged"/>
             <DatePicker x:Name="datePickEnd" Header="End Date" Margin="0,5,0,0"
-                        HorizontalAlignment="Center"/>
+                        HorizontalAlignment="Center" SelectedDateChanged="datePickEnd_SelectedDateChanged"/>
         </StackPanel>
         <ScrollViewer Grid.Row="1" Grid.Column="0">
             <ListView 
