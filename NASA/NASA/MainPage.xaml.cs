@@ -60,10 +60,42 @@ namespace NASA
             // Start with 50 random
             string url = "https://apodapi.herokuapp.com/api/?count=50";
 
+            //string startStr = "?start_date=";
+            //string endStr = "end_date=";
+
+            //var today = new DateTime();
+            //today = DateTime.Now;
+
+            //var startDay = today.AddYears(-1);
+
+            ////startDay.AddYears(-1);
+
+            //var todayStr = today.Year.ToString() + "-" +
+            //    today.Month.ToString() + "-" +
+            //    today.Day.ToString();
+
+
+            //var startDayStr = startDay.Year.ToString() + "-" +
+            //    startDay.Month.ToString() + "-" +
+            //    startDay.Day.ToString();
+
+            //startDayStr = "1996-01-01";
+
+
+            //string allUrl = url + startStr + startDayStr + '&' + endStr + todayStr;
+
+
+
+
             HttpClient client = new HttpClient();
 
             string response = await client.GetStringAsync(url);
             var data = JsonConvert.DeserializeObject<ObservableCollection<DaysModel>>(response);
+
+            for (int i = 0; i < data.Count; i++)
+            {
+                DaysVM.Days.Add(data[i]);
+            }
 
             DaysVM.Days = data;
 
@@ -97,8 +129,9 @@ namespace NASA
 
             if (startDateSet && endDateSet)
             {
+                DaysVM.Days.Clear();
                 // GET IMAGES/DAYS
-                string temp = "temp";
+                DaysVM.LoadImages(startDateStr, endDateStr);
             }           
         }
 
@@ -117,7 +150,9 @@ namespace NASA
 
             if (startDateSet && endDateSet)
             {
+                DaysVM.Days.Clear();
                 // GET IMAGES/DAYS
+                DaysVM.LoadImages(startDateStr, endDateStr);
             }
 
             
