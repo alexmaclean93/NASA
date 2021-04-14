@@ -17,7 +17,7 @@
     <Page.Resources>
         <CollectionViewSource x:Name="DaysCollection" Source="{x:Bind DaysVM.Days}"/>
         <DataTemplate x:Name="DayTemplate" x:DataType="models:DaysModel">
-            <TextBlock Text="{x:Bind title}" FontSize="32"/>
+            <TextBlock Text="{x:Bind title}" FontSize="13"  />
         </DataTemplate>
     </Page.Resources>
     

@@ -15,6 +15,7 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using Newtonsoft.Json;
 using NASA.Models;
+using System.Collections.ObjectModel;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
@@ -45,7 +46,9 @@ namespace NASA
             datePickEnd.MinYear = new DateTime(1995, 1, 1);
             datePickEnd.MaxYear = DateTime.Now;
 
-            //GetDataFromAPI(dateString);
+            //GetDataFromAPI("temp");
+
+            //string temp = "Break point";
         }
 
         private async void GetDataFromAPI(string dateString)
@@ -60,7 +63,9 @@ namespace NASA
             HttpClient client = new HttpClient();
 
             string response = await client.GetStringAsync(url);
-            var data = JsonConvert.DeserializeObject<List<DaysModel>>(response);
+            var data = JsonConvert.DeserializeObject<ObservableCollection<DaysModel>>(response);
+
+            DaysVM.Days = data;
 
             string temp = "Break point";
         }

@@ -313,3 +313,14 @@ D:\School\PROG2500\NASA-old\NASA\NASA\NASA\obj\x86\Debug\MultipleQualifiersPerDi
 D:\School\PROG2500\NASA-old\NASA\NASA\NASA\obj\x86\Debug\ProjectArchitectures.txt
 D:\School\PROG2500\NASA-old\NASA\NASA\NASA\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_637112714540000000.json
 D:\School\PROG2500\NASA-old\NASA\NASA\NASA\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_637424959200000000.json
+D:\School\PROG2500\Final\NASA\NASA\NASA\bin\x86\Debug\About.xbf
+D:\School\PROG2500\Final\NASA\NASA\NASA\bin\x86\Debug\Details.xbf
+D:\School\PROG2500\Final\NASA\NASA\NASA\obj\x86\Debug\About.g.i.cs
+D:\School\PROG2500\Final\NASA\NASA\NASA\obj\x86\Debug\About.g.cs
+D:\School\PROG2500\Final\NASA\NASA\NASA\obj\x86\Debug\Details.g.i.cs
+D:\School\PROG2500\Final\NASA\NASA\NASA\obj\x86\Debug\Details.g.cs
+D:\School\PROG2500\Final\NASA\NASA\NASA\obj\x86\Debug\About.xaml
+D:\School\PROG2500\Final\NASA\NASA\NASA\obj\x86\Debug\Details.xaml
+D:\School\PROG2500\Final\NASA\NASA\NASA\obj\x86\Debug\About.xbf
+D:\School\PROG2500\Final\NASA\NASA\NASA\obj\x86\Debug\Details.xbf
+D:\School\PROG2500\Final\NASA\NASA\NASA\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_637112714540000000.json

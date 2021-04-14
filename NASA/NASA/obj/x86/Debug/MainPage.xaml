@@ -17,7 +17,7 @@
     <Page.Resources>
         <CollectionViewSource x:ConnectionId='2' x:Name="DaysCollection"                              />
         <DataTemplate x:ConnectionId='3' x:Name="DayTemplate"                              >
-            <TextBlock x:ConnectionId='4'                       FontSize="32"/>
+            <TextBlock x:ConnectionId='4'                       FontSize="13"  />
         </DataTemplate>
     </Page.Resources>
     
