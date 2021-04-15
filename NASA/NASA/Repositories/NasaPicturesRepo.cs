@@ -34,13 +34,27 @@ namespace NASA.Repositories
             {
                 if (!record.Contains("}"))
                 {
-                    daysVM.Days.Add(JsonConvert.DeserializeObject<DaysModel>(record + "}"));
+                    DaysModel newDay = JsonConvert.DeserializeObject<DaysModel>(record + "}");
+
+                    if (newDay.url != null && newDay.media_type == "image")
+                    {
+                        daysVM.Days.Add(newDay);
+                    }
+
+                    //daysVM.Days.Add(JsonConvert.DeserializeObject<DaysModel>(record + "}"));
                 }
 
                 else
                 {
                     Debug.WriteLine(record);
-                    daysVM.Days.Add(JsonConvert.DeserializeObject<DaysModel>(record));
+                    //daysVM.Days.Add(JsonConvert.DeserializeObject<DaysModel>(record));
+
+                    DaysModel newDay = JsonConvert.DeserializeObject<DaysModel>(record);
+
+                    if (newDay.url != null && newDay.media_type == "image")
+                    {
+                        daysVM.Days.Add(newDay);
+                    }
                 }
 
             }
