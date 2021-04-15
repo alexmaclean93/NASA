@@ -58,7 +58,8 @@
         </ScrollViewer>
 
         <StackPanel Grid.Row="0" Grid.Column="1" Grid.RowSpan="2">
-            <Image Width="Auto" Height="Auto" Source="{x:Bind DaysVM.selectedDay.hdurl, Mode=OneWay}" />
+            <Image Width="Auto" Height="700" Source="{x:Bind DaysVM.selectedDay.hdurl, Mode=OneWay}" 
+                   x:FieldModifier="public" x:Name="ImagePanel"/>
             <Button HorizontalAlignment="Stretch" Margin="0" Height="56" VerticalAlignment="Bottom"
                      FontSize="22">Photo Details</Button>
         </StackPanel>

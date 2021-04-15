@@ -23,6 +23,7 @@ namespace NASA.ViewModels
         public string media_type { get; set; }
         public string title { get; set; }
         public string url { get; set; }
+        private readonly MainPage mainPage;
         private DaysModel _selectedDay;
 
         public DaysModel selectedDay
@@ -43,6 +44,14 @@ namespace NASA.ViewModels
                     url = value.url;
                 }
 
+                if (selectedDay != null)
+                {
+                    // Show selected day's image
+                    var bitmapImage = NasaPicturesRepo.GetImage(selectedDay);
+                    mainPage.ImagePanel.Source = bitmapImage;
+                }
+
+
                 // Raise property chaned event
 
 
@@ -52,6 +61,12 @@ namespace NASA.ViewModels
 
         public DaysViewModel()
         {
+            Days = new ObservableCollection<DaysModel>();
+            LoadImages("2018-10-05", "2018-10-10");
+        }
+        public DaysViewModel(MainPage main)
+        {
+            this.mainPage = main;
             Days = new ObservableCollection<DaysModel>();
             LoadImages("2018-10-05", "2018-10-10");
         }

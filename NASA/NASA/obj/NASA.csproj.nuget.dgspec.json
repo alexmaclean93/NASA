@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\School\\PROG2500\\Final\\NASA\\NASA\\NASA\\NASA.csproj": {}
+    "D:\\School\\PROG2500\\April 15\\NASA\\NASA\\NASA\\NASA.csproj": {}
   },
   "projects": {
-    "D:\\School\\PROG2500\\Final\\NASA\\NASA\\NASA\\NASA.csproj": {
+    "D:\\School\\PROG2500\\April 15\\NASA\\NASA\\NASA\\NASA.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\School\\PROG2500\\Final\\NASA\\NASA\\NASA\\NASA.csproj",
+        "projectUniqueName": "D:\\School\\PROG2500\\April 15\\NASA\\NASA\\NASA\\NASA.csproj",
         "projectName": "NASA",
-        "projectPath": "D:\\School\\PROG2500\\Final\\NASA\\NASA\\NASA\\NASA.csproj",
+        "projectPath": "D:\\School\\PROG2500\\April 15\\NASA\\NASA\\NASA\\NASA.csproj",
         "packagesPath": "C:\\Users\\alexm\\.nuget\\packages\\",
-        "outputPath": "D:\\School\\PROG2500\\Final\\NASA\\NASA\\NASA\\obj\\",
+        "outputPath": "D:\\School\\PROG2500\\April 15\\NASA\\NASA\\NASA\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [

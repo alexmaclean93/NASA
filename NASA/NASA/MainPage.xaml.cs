@@ -36,7 +36,7 @@ namespace NASA
         {
             this.InitializeComponent();
 
-            this.DaysVM = new ViewModels.DaysViewModel();
+            this.DaysVM = new ViewModels.DaysViewModel(this);
 
             DayModel = new Root();
 
@@ -45,63 +45,9 @@ namespace NASA
 
             datePickEnd.MinYear = new DateTime(1995, 1, 1);
             datePickEnd.MaxYear = DateTime.Now;
-
-            //GetDataFromAPI("temp");
-
-            //string temp = "Break point";
         }
 
-        private async void GetDataFromAPI(string dateString)
-        {
-            
-            // Example Date range string 
-            //string url = "https://apodapi.herokuapp.com/api/?start_date=2020-01-01&end_date=2020-12-31";
-
-            // Start with 50 random
-            string url = "https://apodapi.herokuapp.com/api/?count=50";
-
-            //string startStr = "?start_date=";
-            //string endStr = "end_date=";
-
-            //var today = new DateTime();
-            //today = DateTime.Now;
-
-            //var startDay = today.AddYears(-1);
-
-            ////startDay.AddYears(-1);
-
-            //var todayStr = today.Year.ToString() + "-" +
-            //    today.Month.ToString() + "-" +
-            //    today.Day.ToString();
-
-
-            //var startDayStr = startDay.Year.ToString() + "-" +
-            //    startDay.Month.ToString() + "-" +
-            //    startDay.Day.ToString();
-
-            //startDayStr = "1996-01-01";
-
-
-            //string allUrl = url + startStr + startDayStr + '&' + endStr + todayStr;
-
-
-
-
-            HttpClient client = new HttpClient();
-
-            string response = await client.GetStringAsync(url);
-            var data = JsonConvert.DeserializeObject<ObservableCollection<DaysModel>>(response);
-
-            for (int i = 0; i < data.Count; i++)
-            {
-                DaysVM.Days.Add(data[i]);
-            }
-
-            DaysVM.Days = data;
-
-            string temp = "Break point";
-        }
-
+       
         //Go to the about page
         private void AboutButton_Click(object sender, RoutedEventArgs e)
         {

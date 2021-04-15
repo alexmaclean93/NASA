@@ -11,6 +11,7 @@ using Newtonsoft.Json;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
 using NASA.ViewModels;
+using Windows.UI.Xaml.Media.Imaging;
 
 namespace NASA.Repositories
 {
@@ -44,6 +45,15 @@ namespace NASA.Repositories
 
             }
             return;
+        }
+
+        public static BitmapImage GetImage(DaysModel selectedDay)
+        {
+            BitmapImage bitmapImage = new BitmapImage();
+            Uri uri = new Uri(selectedDay.url);
+            bitmapImage.UriSource = uri;
+
+            return bitmapImage;
         }
 
 
