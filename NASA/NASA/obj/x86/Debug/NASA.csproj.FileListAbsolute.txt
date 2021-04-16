@@ -452,3 +452,8 @@ D:\School\PROG2500\April 16\NASA\NASA\NASA\obj\x86\Debug\MultipleQualifiersPerDi
 D:\School\PROG2500\April 16\NASA\NASA\NASA\obj\x86\Debug\ProjectArchitectures.txt
 D:\School\PROG2500\April 16\NASA\NASA\NASA\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_637112714540000000.json
 D:\School\PROG2500\April 16\NASA\NASA\NASA\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_637424959200000000.json
+F:\SEM4-NSCC\PROG_2500\NASA\NASA\NASA\bin\x86\Debug\ExitDialog.xbf
+F:\SEM4-NSCC\PROG_2500\NASA\NASA\NASA\obj\x86\Debug\ExitDialog.g.i.cs
+F:\SEM4-NSCC\PROG_2500\NASA\NASA\NASA\obj\x86\Debug\ExitDialog.g.cs
+F:\SEM4-NSCC\PROG_2500\NASA\NASA\NASA\obj\x86\Debug\ExitDialog.xaml
+F:\SEM4-NSCC\PROG_2500\NASA\NASA\NASA\obj\x86\Debug\ExitDialog.xbf

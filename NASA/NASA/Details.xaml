@@ -8,7 +8,9 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <StackPanel VerticalAlignment="Top" Margin="12">
-        <TextBlock x:Name="photoDetails" ToolTipService.ToolTip="Photo Details" FontSize="32" TextWrapping="Wrap"/>
-    </StackPanel>
+    <ScrollViewer>
+        <StackPanel VerticalAlignment="Top" Margin="12">
+            <TextBlock x:Name="photoDetails" ToolTipService.ToolTip="Photo Details" FontSize="32" TextWrapping="Wrap"/>
+        </StackPanel>
+    </ScrollViewer>
 </Page>

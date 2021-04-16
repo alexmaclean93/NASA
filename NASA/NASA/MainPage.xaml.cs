@@ -149,6 +149,9 @@ namespace NASA
                     DaysVM.Days.Clear();
                     // GET IMAGES/DAYS
                     DaysVM.LoadImages(startDateStr, endDateStr);
+
+                    // Make Details Button Accessible
+                    DetailsBtn.Visibility = Visibility.Visible;
                 }
 
                 
