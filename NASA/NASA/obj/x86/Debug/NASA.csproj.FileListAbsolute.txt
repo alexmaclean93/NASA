@@ -385,3 +385,8 @@ C:\Users\ckeiz\source\repos\NASA\NASA\NASA\obj\x86\Debug\Details.g.i.cs
 C:\Users\ckeiz\source\repos\NASA\NASA\NASA\obj\x86\Debug\Details.g.cs
 C:\Users\ckeiz\source\repos\NASA\NASA\NASA\obj\x86\Debug\Details.xaml
 C:\Users\ckeiz\source\repos\NASA\NASA\NASA\obj\x86\Debug\Details.xbf
+C:\Users\ckeiz\source\repos\NASA\NASA\NASA\bin\x86\Debug\ExitDialog.xbf
+C:\Users\ckeiz\source\repos\NASA\NASA\NASA\obj\x86\Debug\ExitDialog.g.i.cs
+C:\Users\ckeiz\source\repos\NASA\NASA\NASA\obj\x86\Debug\ExitDialog.g.cs
+C:\Users\ckeiz\source\repos\NASA\NASA\NASA\obj\x86\Debug\ExitDialog.xaml
+C:\Users\ckeiz\source\repos\NASA\NASA\NASA\obj\x86\Debug\ExitDialog.xbf

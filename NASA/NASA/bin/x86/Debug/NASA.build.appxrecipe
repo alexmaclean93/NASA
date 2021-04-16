@@ -79,6 +79,9 @@
     <AppxPackagedFile Include="C:\Users\ckeiz\source\repos\NASA\NASA\NASA\bin\x86\Debug\Details.xbf">
       <PackagePath>Details.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ckeiz\source\repos\NASA\NASA\NASA\bin\x86\Debug\ExitDialog.xbf">
+      <PackagePath>ExitDialog.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ckeiz\source\repos\NASA\NASA\NASA\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
     </AppxPackagedFile>

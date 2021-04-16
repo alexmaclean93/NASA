@@ -75,9 +75,15 @@ namespace NASA
         }
 
         //Exit the program
-        private void ExitButton_Click(object sender, RoutedEventArgs e)
+        private async void ExitButton_Click(object sender, RoutedEventArgs e)
         {
-            System.Environment.Exit(0);
+            ExitDialog ed = new ExitDialog();
+            ContentDialogResult result = await ed.ShowAsync();
+            if (result == ContentDialogResult.Primary)
+            {
+                System.Environment.Exit(0);
+            }
+
         }
 
         private void datePickStart_SelectedDateChanged(DatePicker sender, DatePickerSelectedValueChangedEventArgs args)
