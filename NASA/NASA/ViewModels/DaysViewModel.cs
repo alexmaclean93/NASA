@@ -1,15 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using NASA.Models;
+using NASA.Repositories;
 
 namespace NASA.ViewModels
 {
-    public class DaysViewModel
+    public class DaysViewModel : INotifyPropertyChanged
     {
+        #region Variable Definitions
+        public event PropertyChangedEventHandler PropertyChanged;
         public ObservableCollection<DaysModel> Days { get; set; }
         public string apod_site { get; set; }
         public string copyright { get; set; }
@@ -19,7 +23,9 @@ namespace NASA.ViewModels
         public string media_type { get; set; }
         public string title { get; set; }
         public string url { get; set; }
+        private readonly MainPage mainPage;
         private DaysModel _selectedDay;
+
         public DaysModel selectedDay
         {
             get { return _selectedDay; }
@@ -38,17 +44,37 @@ namespace NASA.ViewModels
                     url = value.url;
                 }
 
+                if (selectedDay != null)
+                {
+                    // Show selected day's image
+                    var bitmapImage = NasaPicturesRepo.GetImage(selectedDay);
+                    mainPage.ImagePanel.Source = bitmapImage;
+                }
+
+
                 // Raise property chaned event
 
 
             }
         }
+        #endregion
 
         public DaysViewModel()
         {
             Days = new ObservableCollection<DaysModel>();
+            LoadImages("2018-10-05", "2018-10-10");
+        }
+        public DaysViewModel(MainPage main)
+        {
+            this.mainPage = main;
+            Days = new ObservableCollection<DaysModel>();
+            LoadImages("2018-10-05", "2018-10-10");
         }
 
-
+        public async void LoadImages(string startDate, string endDate)
+        {
+            await NasaPicturesRepo.GetDateRange(this, startDate, endDate);
+            
+        }
     }
 }
