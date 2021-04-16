@@ -45,12 +45,12 @@
         </Grid.ColumnDefinitions>
 
         <StackPanel Grid.Row="0" Grid.Column="0" Margin="0,5,0,0">
-            <DatePicker x:ConnectionId='9' x:Name="datePickStart" Header="Start Date" HorizontalAlignment="Center"                                                        />
-            <DatePicker x:ConnectionId='10' x:Name="datePickEnd" Header="End Date" Margin="0,5,0,0"
+            <DatePicker x:ConnectionId='10' x:Name="datePickStart" Header="Start Date" HorizontalAlignment="Center"                                                        />
+            <DatePicker x:ConnectionId='11' x:Name="datePickEnd" Header="End Date" Margin="0,5,0,0"
                         HorizontalAlignment="Center"                                                      />
         </StackPanel>
         <ScrollViewer Grid.Row="1" Grid.Column="0">
-            <ListView x:ConnectionId='8' 
+            <ListView x:ConnectionId='9' 
                 ItemsSource="{Binding Source={StaticResource DaysCollection}}"
                 ItemTemplate="{Binding Source={StaticResource DayTemplate}}"
                                                                        >
@@ -60,8 +60,8 @@
         <StackPanel Grid.Row="0" Grid.Column="1" Grid.RowSpan="2">
             <Image x:ConnectionId='7' Width="Auto" Height="700"                                                         
                    x:FieldModifier="public" x:Name="ImagePanel"/>
-            <Button HorizontalAlignment="Stretch" Margin="0" Height="56" VerticalAlignment="Bottom"
-                     FontSize="22">Photo Details</Button>
+            <Button x:ConnectionId='8' HorizontalAlignment="Stretch" Margin="0" Height="56" VerticalAlignment="Bottom"
+                                                                                                FontSize="22">Photo Details</Button>
         </StackPanel>
     </Grid>
 </Page>

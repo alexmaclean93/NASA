@@ -61,7 +61,7 @@
             <Image Width="Auto" Height="700" Source="{x:Bind DaysVM.selectedDay.hdurl, Mode=OneWay}" 
                    x:FieldModifier="public" x:Name="ImagePanel"/>
             <Button HorizontalAlignment="Stretch" Margin="0" Height="56" VerticalAlignment="Bottom"
-                     FontSize="22">Photo Details</Button>
+                     CommandParameter="{x:Bind DaysVM.selectedDay}" Click="DetailsButton_Click" FontSize="22">Photo Details</Button>
         </StackPanel>
     </Grid>
 </Page>

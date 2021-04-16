@@ -8,8 +8,8 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
-
-    </Grid>
+    <StackPanel VerticalAlignment="Top" Margin="12">
+        <TextBlock x:ConnectionId='2' x:Name="photoDetails" ToolTipService.ToolTip="Photo Details" FontSize="32" TextWrapping="Wrap"/>
+    </StackPanel>
 </Page>
 

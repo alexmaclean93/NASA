@@ -16,6 +16,7 @@ using Windows.UI.Xaml.Navigation;
 using Newtonsoft.Json;
 using NASA.Models;
 using System.Collections.ObjectModel;
+using NASA.ViewModels;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
@@ -47,6 +48,25 @@ namespace NASA
             datePickEnd.MaxYear = DateTime.Now;
         }
 
+        //Go to the details page
+        private void DetailsButton_Click(object sender, RoutedEventArgs e)
+        {
+            String address = this.DaysVM.selectedDay.apod_site;
+            String copyright = this.DaysVM.selectedDay.copyright;
+            String date = this.DaysVM.selectedDay.date;
+            String title = this.DaysVM.selectedDay.title;
+            String description = this.DaysVM.selectedDay.description;
+            String url = this.DaysVM.selectedDay.hdurl;
+
+            String Param = string.Format("Name: " + title +
+                "\nAddress: " + address +
+                "\nDate: " + date +
+                "\nDescription: " + description +
+                "\nURL: " + url +
+                "\nCopyright " + copyright);
+
+            Frame.Navigate(typeof(Details), Param);
+        }
        
         //Go to the about page
         private void AboutButton_Click(object sender, RoutedEventArgs e)
@@ -100,8 +120,6 @@ namespace NASA
                 // GET IMAGES/DAYS
                 DaysVM.LoadImages(startDateStr, endDateStr);
             }
-
-            
         }
     }
 }

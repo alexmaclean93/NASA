@@ -136,7 +136,6 @@ C:\Users\ckeiz\Source\Repos\NASA\NASA\NASA\obj\x86\Debug\qualifiers.txt.intermed
 C:\Users\ckeiz\Source\Repos\NASA\NASA\NASA\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\ckeiz\Source\Repos\NASA\NASA\NASA\obj\x86\Debug\ProjectArchitectures.txt
 C:\Users\ckeiz\Source\Repos\NASA\NASA\NASA\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_637112714540000000.json
-C:\Users\ckeiz\Source\Repos\NASA\NASA\NASA\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_637424959200000000.json
 C:\Users\ckeiz\source\repos\NASA\NASA\NASA\bin\x86\Debug\About.xbf
 C:\Users\ckeiz\source\repos\NASA\NASA\NASA\obj\x86\Debug\About.g.i.cs
 C:\Users\ckeiz\source\repos\NASA\NASA\NASA\obj\x86\Debug\About.g.cs
@@ -381,3 +380,8 @@ D:\School\PROG2500\April 15\NASA\NASA\NASA\obj\x86\Debug\MultipleQualifiersPerDi
 D:\School\PROG2500\April 15\NASA\NASA\NASA\obj\x86\Debug\ProjectArchitectures.txt
 D:\School\PROG2500\April 15\NASA\NASA\NASA\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_637112714540000000.json
 D:\School\PROG2500\April 15\NASA\NASA\NASA\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_637424959200000000.json
+C:\Users\ckeiz\source\repos\NASA\NASA\NASA\bin\x86\Debug\Details.xbf
+C:\Users\ckeiz\source\repos\NASA\NASA\NASA\obj\x86\Debug\Details.g.i.cs
+C:\Users\ckeiz\source\repos\NASA\NASA\NASA\obj\x86\Debug\Details.g.cs
+C:\Users\ckeiz\source\repos\NASA\NASA\NASA\obj\x86\Debug\Details.xaml
+C:\Users\ckeiz\source\repos\NASA\NASA\NASA\obj\x86\Debug\Details.xbf
