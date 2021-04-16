@@ -46,14 +46,13 @@ namespace NASA.ViewModels
 
                 if (selectedDay != null)
                 {
+
+                    mainPage.DetailsBtn.Visibility = Windows.UI.Xaml.Visibility.Visible;
+                    
                     // Show selected day's image
                     var bitmapImage = NasaPicturesRepo.GetImage(selectedDay);
                     mainPage.ImagePanel.Source = bitmapImage;
                 }
-
-
-                // Raise property chaned event
-
 
             }
         }
@@ -68,7 +67,21 @@ namespace NASA.ViewModels
         {
             this.mainPage = main;
             Days = new ObservableCollection<DaysModel>();
-            LoadImages("2018-10-05", "2018-10-10");
+
+
+            // Get the strings for the first day of the current month for the start date and the current date for end
+            DateTime endDate = DateTime.Now;
+            String endDateStr = endDate.Year.ToString() + "-" +
+            endDate.Month.ToString() + "-" +
+            endDate.Day.ToString();
+
+            DateTime startDate = new DateTime(endDate.Year,endDate.Month,1);
+            String startDateStr = startDate.Year.ToString() + "-" +
+            startDate.Month.ToString() + "-" +
+            startDate.Day.ToString();
+
+            // Display this month's images
+            LoadImages(startDateStr, endDateStr);
         }
 
         public async void LoadImages(string startDate, string endDate)

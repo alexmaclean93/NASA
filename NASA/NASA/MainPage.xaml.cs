@@ -28,6 +28,8 @@ namespace NASA
         public ViewModels.DaysViewModel DaysVM { get; set; }
         public Root DayModel { get; set; }
         
+        private DateTimeOffset? startDate { get; set; }
+        private DateTimeOffset? endDate { get; set; }
         private string startDateStr { get; set; }
         private string endDateStr { get; set; }
         private bool startDateSet = false;
@@ -41,10 +43,10 @@ namespace NASA
 
             DayModel = new Root();
 
-            datePickStart.MinYear = new DateTime(1995, 1, 1);
+            datePickStart.MinYear = new DateTime(1996, 1, 1);
             datePickStart.MaxYear = DateTime.Now;
 
-            datePickEnd.MinYear = new DateTime(1995, 1, 1);
+            datePickEnd.MinYear = new DateTime(1996, 1, 1);
             datePickEnd.MaxYear = DateTime.Now;
         }
 
@@ -89,9 +91,9 @@ namespace NASA
         private void datePickStart_SelectedDateChanged(DatePicker sender, DatePickerSelectedValueChangedEventArgs args)
         {
 
-            // NEED TO CHECK FOR CORRECT START DATE (NOT BEFORE 1995-06-16)
-
             var date = args.NewDate;
+
+            startDate = date;
 
             startDateStr = date.Value.Year.ToString() + "-" +
                 date.Value.Month.ToString() + "-" +
@@ -101,9 +103,20 @@ namespace NASA
 
             if (startDateSet && endDateSet)
             {
-                DaysVM.Days.Clear();
-                // GET IMAGES/DAYS
-                DaysVM.LoadImages(startDateStr, endDateStr);
+
+                var range = endDate.Value.Year - 5;
+
+                if (range > startDate.Value.Year)
+                {
+                    showError();
+                } else
+                {
+                    DaysVM.Days.Clear();
+                    // GET IMAGES/DAYS
+                    DaysVM.LoadImages(startDateStr, endDateStr);
+                }
+                
+                
             }           
         }
 
@@ -114,6 +127,8 @@ namespace NASA
 
             var date = args.NewDate;
 
+            endDate = date;
+
             endDateStr = date.Value.Year.ToString() + "-" +
                 date.Value.Month.ToString() + "-" +
                 date.Value.Day.ToString();
@@ -122,10 +137,33 @@ namespace NASA
 
             if (startDateSet && endDateSet)
             {
-                DaysVM.Days.Clear();
-                // GET IMAGES/DAYS
-                DaysVM.LoadImages(startDateStr, endDateStr);
+
+                var range = endDate.Value.Year - 5;
+
+                if (range > startDate.Value.Year)
+                {
+                    showError();
+                }
+                else
+                {
+                    DaysVM.Days.Clear();
+                    // GET IMAGES/DAYS
+                    DaysVM.LoadImages(startDateStr, endDateStr);
+                }
+
+                
             }
+        }
+
+        private async static void showError()
+        {
+            ContentDialog rangeErrorDialog= new ContentDialog()
+            {
+                Title = "Error",
+                Content = "That range is too large, please select a smaller range",
+                PrimaryButtonText = "OK"
+            };
+            await rangeErrorDialog.ShowAsync();
         }
     }
 }

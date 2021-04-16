@@ -95,6 +95,7 @@
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="CommandParameter" />
       <RootProperty Name="FontSize" />
+      <RootProperty Name="Visibility" />
       <RootProperty Name="Content" />
       <RootEvent Name="Click" />
     </RootType>

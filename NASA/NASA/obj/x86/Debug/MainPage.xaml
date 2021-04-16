@@ -61,7 +61,8 @@
             <Image x:ConnectionId='7' Width="Auto" Height="700"                                                         
                    x:FieldModifier="public" x:Name="ImagePanel"/>
             <Button x:ConnectionId='8' HorizontalAlignment="Stretch" Margin="0" Height="56" VerticalAlignment="Bottom"
-                                                                                                FontSize="22">Photo Details</Button>
+                                                                                                FontSize="22" x:FieldModifier="public" x:Name="DetailsBtn"
+                    Visibility="Collapsed">Photo Details</Button>
         </StackPanel>
     </Grid>
 </Page>
