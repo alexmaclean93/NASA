@@ -91,28 +91,24 @@ namespace NASA
         private void datePickStart_SelectedDateChanged(DatePicker sender, DatePickerSelectedValueChangedEventArgs args)
         {
 
+            // Convert selected date to required string format
             var date = args.NewDate;
-
             startDate = date;
-
             startDateStr = date.Value.Year.ToString() + "-" +
                 date.Value.Month.ToString() + "-" +
                 date.Value.Day.ToString();
 
             startDateSet = true;
-
+            // Get the images/days if start and end date set and if within valid range
             if (startDateSet && endDateSet)
             {
-
-                var range = endDate.Value.Year - 5;
-
+                var range = endDate.Value.Year - 2;
                 if (range > startDate.Value.Year)
                 {
                     showError();
                 } else
                 {
                     DaysVM.Days.Clear();
-                    // GET IMAGES/DAYS
                     DaysVM.LoadImages(startDateStr, endDateStr);
                 }
                 
@@ -123,23 +119,19 @@ namespace NASA
         private void datePickEnd_SelectedDateChanged(DatePicker sender, DatePickerSelectedValueChangedEventArgs args)
         {
 
-            // NEED TO CHECK FOR CORRECT END DATE (NOT BEFORE START DATE)
-
+            // Convert selected date to required string format
             var date = args.NewDate;
-
             endDate = date;
-
             endDateStr = date.Value.Year.ToString() + "-" +
                 date.Value.Month.ToString() + "-" +
                 date.Value.Day.ToString();
 
             endDateSet = true;
 
+            // Get the images/days if start and end date set and if within valid range
             if (startDateSet && endDateSet)
             {
-
-                var range = endDate.Value.Year - 5;
-
+                var range = endDate.Value.Year - 2;
                 if (range > startDate.Value.Year)
                 {
                     showError();
@@ -147,14 +139,8 @@ namespace NASA
                 else
                 {
                     DaysVM.Days.Clear();
-                    // GET IMAGES/DAYS
                     DaysVM.LoadImages(startDateStr, endDateStr);
-
-                    // Make Details Button Accessible
-                    DetailsBtn.Visibility = Visibility.Visible;
                 }
-
-                
             }
         }
 

@@ -1,24 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "F:\\SEM4-NSCC\\PROG_2500\\NASA\\NASA\\NASA\\NASA.csproj": {}
+    "D:\\School\\PROG2500\\April 16\\NASA\\NASA\\NASA\\NASA.csproj": {}
   },
   "projects": {
-    "F:\\SEM4-NSCC\\PROG_2500\\NASA\\NASA\\NASA\\NASA.csproj": {
+    "D:\\School\\PROG2500\\April 16\\NASA\\NASA\\NASA\\NASA.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\SEM4-NSCC\\PROG_2500\\NASA\\NASA\\NASA\\NASA.csproj",
+        "projectUniqueName": "D:\\School\\PROG2500\\April 16\\NASA\\NASA\\NASA\\NASA.csproj",
         "projectName": "NASA",
-        "projectPath": "F:\\SEM4-NSCC\\PROG_2500\\NASA\\NASA\\NASA\\NASA.csproj",
-        "packagesPath": "C:\\Users\\am_ka\\.nuget\\packages\\",
-        "outputPath": "F:\\SEM4-NSCC\\PROG_2500\\NASA\\NASA\\NASA\\obj\\",
+        "projectPath": "D:\\School\\PROG2500\\April 16\\NASA\\NASA\\NASA\\NASA.csproj",
+        "packagesPath": "C:\\Users\\alexm\\.nuget\\packages\\",
+        "outputPath": "D:\\School\\PROG2500\\April 16\\NASA\\NASA\\NASA\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\am_ka\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\alexm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
